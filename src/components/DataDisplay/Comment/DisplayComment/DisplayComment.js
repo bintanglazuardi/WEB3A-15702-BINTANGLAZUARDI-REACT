@@ -25,12 +25,14 @@ const ExampleComment = ({ children }) => (
 
 const DisplayCommentAnt = () => {
     return(
-        <ExampleComment>
+      <div style={{maxWidth:'60%', margin:'20px'}}>
+        <ExampleComment >
             <ExampleComment>
-            <ExampleComment />
-            <ExampleComment />
+              <ExampleComment />
+              <ExampleComment />
             </ExampleComment>
         </ExampleComment>
+      </div>
     )
 }
 

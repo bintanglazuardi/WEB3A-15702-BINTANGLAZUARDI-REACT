@@ -2,10 +2,10 @@ import React from 'react';
 import './Carousel.css';
 
 import { Carousel } from 'antd';
-
+//height:'360px',width:'640px'
 const CarouselAnt = () => {
     return(
-        <Carousel autoplay style={{height:'360px',width:'640px', margin:'auto'}}>
+        <Carousel autoplay style={{height:'360px',width:'640px', margin:'auto', marginBottom:'50px'}}>
             <div class="carousel">
                 <img class="image" src="https://hdwallpaperfx.com/wp-content/uploads/2017/06/Animated-Kingdom-Mountains-Sunrise.jpg" />
             </div>

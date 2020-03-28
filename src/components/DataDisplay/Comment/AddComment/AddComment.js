@@ -70,7 +70,7 @@ class App extends React.Component {
     const { comments, submitting, value } = this.state;
 
     return (
-      <div>
+      <div style={{maxWidth:'60%', margin:'20px'}}>
         {comments.length > 0 && <CommentList comments={comments} />}
         <Comment
           avatar={
