@@ -1,8 +1,9 @@
 import React from 'react';
-import './style.css';
+import './Card.css';
 import { Card, Col, Row } from 'antd';
 
-import PageHeaderAnt from '../dataEntry/rate';
+import PageHeaderAnt from '../DataEntry/Rate/Rate';
+import LikeButton from '../DataEntry/LikeButton/LikeButton';
 
 const cardData = [
     {
@@ -39,7 +40,7 @@ const cardData = [
             <Col span={8}>
               <Card title={data.name} style={{minWidth:30,margin:'0 20 20 20'}}>
                 <p className="job"> {data.job} </p>
-
+                <LikeButton/>
                 <PageHeaderAnt/>
               </Card>
             </Col>           

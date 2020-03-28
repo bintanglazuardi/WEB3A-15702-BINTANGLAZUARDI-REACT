@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import { Pagination } from './node_modules/antd';
+import React from 'react';
+import { Pagination } from 'antd';
 
 const PaginationAnt = () => {
     return (

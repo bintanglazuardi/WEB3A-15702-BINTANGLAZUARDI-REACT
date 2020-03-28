@@ -1,22 +1,23 @@
-import React from './node_modules/react';
-import './style.css';
+import React from 'react';
+import './Dashboard2.css';
 
-import CardAnt from '../../card';
-import Pagination from '../../navigation/pagination';
-import PageHeaderAnt from '../../navigation/pageHeader';
-import SearchAnt from '../../dataEntry/input';
-import CarouselAnt from '../../dataDisplay/carousel';
-import AddCommentAnt from '../../dataDisplay/comment/addComment';
-import DisplayCommentAnt from '../../dataDisplay/comment/displayComment';
+import CardAnt from '../../Card/Card';
+import Pagination from '../../Navigation/Pagination/Pagination';
+import PageHeaderAnt from '../../Navigation/PageHeader/PageHeader';
+import SearchAnt from '../../DataEntry/Search/Search';
+import CarouselAnt from '../../DataDisplay/Carousel/Carousel';
+import AddCommentAnt from '../../DataDisplay/Comment/AddComment/AddComment';
+import DisplayCommentAnt from '../../DataDisplay/Comment/DisplayComment/DisplayComment';
 
-import { Layout, Menu, Breadcrumb } from './node_modules/antd';
+
+import { Layout, Menu, Breadcrumb } from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
   FileOutlined,
   TeamOutlined,
   UserOutlined,
-} from './node_modules/@ant-design/icons';
+} from '@ant-design/icons';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;

@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css';
+import './Dashboard.css';
 
-import CardAnt from '../../card';
+import CardAnt from '../../Card/Card';
 
 import { Layout, Menu } from 'antd';
 import {

@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Dashboard from './components/layout/dashboard';
-// import Dashboard2 from './components/layout/dashboard2';
+import Dashboard from './components/Layout/Dashboard/Dashboard';
+import Dashboard2 from './components/Layout/Dashboard2/Dashboard2';
 
 import { Card, Col, Row } from 'antd';    //import card
 import { Carousel } from 'antd';          //import carousel
@@ -322,16 +322,106 @@ const ExampleComment = ({ children }) => (
 );
 
 //===============================================================================================
+//Like Button
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      btnText: 'Like',
+      className: 'heartOpen'
+    }
+  }
+
+  btnClick() {
+    if(this.state.btnText === 'Like') {
+      this.setState({
+        btnText: 'Unlike',
+        className: 'heartFull'
+      })
+    } else {
+      this.setState({
+        btnText: 'Like',
+        className: 'heartOpen'
+      })
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello World</h1>
+        <span id="btnLike" onClick={ this.btnClick.bind(this) } className={this.state.className}>
+          { this.state.btnText }
+        </span>
+      </div>
+    )
+  }
+}
+
+class LikeButton2 extends React.Component{
+  state = {
+      like:0,
+      dislike:0
+  }
+
+  handleLike = () => {
+    if(this.state.like == 0){
+      this.setState({
+          like: this.state.like + 1
+      });   
+    }
+  }
+
+  handleUnlike = () => {
+    if(this.state.like > 0){
+      this.setState({
+          like: this.state.like - 1
+      });
+    }     
+  }
+
+  handleDislike = () => {
+      this.setState({
+          dislike: this.state.dislike + 1
+      }); 
+  }
+
+  render(){
+      return(
+          <div className="card">
+              <div >
+                  <h3>Like : {this.state.like}</h3>
+                  {/* <h3>Dislike : {this.state.dislike}</h3> */}
+              </div>
+              <div className="button">
+                  <button style={{margin:"5px",backgroundColor:"#00adb5", color:"#ffffff"}} className="like" onClick={this.handleLike}>Like</button>
+                  <button style={{margin:"5px",backgroundColor:"#f73859", color:"#ffffff"}} className="dislike" onClick={this.handleUnlike}>Unlike</button>
+              </div>
+          </div>
+         
+      )
+  }
+}
+
+const LikeButtonShow = () => {
+  return(
+    // <LikeButton/>
+    <LikeButton2/>
+  )
+}
+
+//===============================================================================================
 
 //dashboard2
 const { Header, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
-const Dashboard2 = () => {
-  return (
-    <SiderDemo/>
-  )
-}
+// const Dashboard2 = () => {
+//   return (
+//     <SiderDemo/>
+//   )
+// }
 class SiderDemo extends React.Component {
   state = {
     collapsed: false,
@@ -449,6 +539,8 @@ class SiderDemo extends React.Component {
                       <p className="job"> {data.job} </p>
                       {/* Rate */}
                       <Rater/>
+                      {/* LikeButtonShow */}
+                      <LikeButtonShow/>
                     </Card>
                   </Col>           
                 )}         
@@ -480,7 +572,8 @@ class SiderDemo extends React.Component {
 
 function App(){
   return(
-    <SiderDemo/>
+    // <SiderDemo/>
+    <Dashboard2/>
   );
   
 }
