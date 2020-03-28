@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/css/main.071b367a.chunk.css",
+    "main.js": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/main.a203d053.chunk.js",
+    "main.js.map": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/main.a203d053.chunk.js.map",
+    "runtime-main.js": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/runtime-main.877bb893.js",
+    "runtime-main.js.map": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/runtime-main.877bb893.js.map",
+    "static/css/2.1bd2ab2f.chunk.css": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/css/2.1bd2ab2f.chunk.css",
+    "static/js/2.116bd246.chunk.js": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/2.116bd246.chunk.js",
+    "static/js/2.116bd246.chunk.js.map": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/2.116bd246.chunk.js.map",
+    "index.html": "/WEB3A-15702-BINTANGLAZUARDI-REACT/index.html",
+    "precache-manifest.f3573f985b4208a7882a9d22bccfd371.js": "/WEB3A-15702-BINTANGLAZUARDI-REACT/precache-manifest.f3573f985b4208a7882a9d22bccfd371.js",
+    "service-worker.js": "/WEB3A-15702-BINTANGLAZUARDI-REACT/service-worker.js",
+    "static/css/2.1bd2ab2f.chunk.css.map": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/css/2.1bd2ab2f.chunk.css.map",
+    "static/css/main.071b367a.chunk.css.map": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/css/main.071b367a.chunk.css.map",
+    "static/js/2.116bd246.chunk.js.LICENSE.txt": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/js/2.116bd246.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/WEB3A-15702-BINTANGLAZUARDI-REACT/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.877bb893.js",
+    "static/css/2.1bd2ab2f.chunk.css",
+    "static/js/2.116bd246.chunk.js",
+    "static/css/main.071b367a.chunk.css",
+    "static/js/main.a203d053.chunk.js"
+  ]
+}
