@@ -4,7 +4,6 @@ import './Dashboard2.css';
 import CardAnt from '../../Card/Card';
 import Pagination from '../../Navigation/Pagination/Pagination';
 import PageHeaderAnt from '../../Navigation/PageHeader/PageHeader';
-import SearchAnt from '../../DataEntry/Search/Search';
 import CarouselAnt from '../../DataDisplay/Carousel/Carousel';
 import AddCommentAnt from '../../DataDisplay/Comment/AddComment/AddComment';
 import DisplayCommentAnt from '../../DataDisplay/Comment/DisplayComment/DisplayComment';
@@ -40,11 +39,11 @@ class SiderDemo extends React.Component {
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <PieChartOutlined />
-              <span>Option 1</span>
+              <span>Card</span>
             </Menu.Item>
             <Menu.Item key="2">
               <DesktopOutlined />
-              <span>Option 2</span>
+              <span>Content</span>
             </Menu.Item>
             <SubMenu
               key="sub1"
@@ -83,20 +82,8 @@ class SiderDemo extends React.Component {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          {/* <Header className="site-layout-background" style={{ padding: 20, margin:20}} >
-            <h1>
-                <b>Content</b>
-            </h1> 
-          </Header> */}
           <Content style={{ margin: '16px 16px' }}>
-            {/* <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-              <Breadcrumb.Item>User</Breadcrumb.Item>
-              <Breadcrumb.Item>User 3</Breadcrumb.Item>
-              <Breadcrumb.Item>Content</Breadcrumb.Item>
-            </Breadcrumb> */}
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              {/* Bill is a cat. */}
               <PageHeaderAnt/>
 
               <CarouselAnt/>
